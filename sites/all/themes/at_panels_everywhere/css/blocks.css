@@ -1,0 +1,45 @@
+/* Blocks */
+
+.block {
+  margin-bottom: 20px;
+}
+
+.block-inner {} /* set block background styles on .block-inner */
+.block-title {}
+.block-content {}
+
+/* Mini panels get a special title class */
+.mini-panel-title {
+  margin: 0 10px;
+}
+
+/* Target sidebar blocks */
+.sidebar .block {}
+.sidebar .block-inner {}
+.sidebar .block-title {}
+.sidebar .block-content {}
+
+/* Gpanel blocks */
+.gpanel .block {}
+.gpanel .block-inner {}
+.gpanel .block-title {}
+.gpanel .block-content {}
+
+/* Block wrapper for Mini Panels */
+.block-panels_mini {}
+.block-panels_mini .block-inner {}
+.block-panels_mini .block-content {}
+.block-panels_mini .mini-panel-title {
+  margin: 0 10px;
+}
+
+/* Reset margins and padding for the Help block .block-inner */
+#block-system-help .block-inner {
+  padding: 0;
+  margin: 0;
+}
+
+/* Reset block ul in the dashboard */
+#dashboard .block ul {
+  margin-left: 0;
+}

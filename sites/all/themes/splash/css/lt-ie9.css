@@ -1,0 +1,16 @@
+/* Target IE 6, 7 and 8 */
+
+/* Assuming a mobile first approach with respond.js OFF, we must reset the font size for lt IE9 */
+html {
+  font-size: 81.3%; /* If you are NOT doing mobile first, you might want to remove this... */
+}
+
+
+#columns {
+	border-top: 1px solid #777; 
+	border-left: 1px solid #777;
+/* For IE 8 */
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+/* For IE 5.5 - 7 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}

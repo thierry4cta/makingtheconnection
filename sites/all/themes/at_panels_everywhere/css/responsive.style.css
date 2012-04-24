@@ -1,0 +1,34 @@
+/**
+ * Use this file to add styles for each layout.
+ *
+ * If you adjust the media queries in the theme settings you should
+ * copy and paste theme here - see the "All Media Queries" tab in the
+ * theme settings for your sub-theme.
+ *
+ * Generally you should not override the layout from this file, instead
+ * use the theme settings. This is the place to add custom
+ * colors, background, fonts etc for each device group.
+ *
+ * To create a true mobile first theme you should unset all other
+ * stylesheets for your sub-theme and place all styles in this file.
+ */
+
+/* Smartphone portrait */
+@media only screen and (max-width:320px) {
+}
+
+/* Smartphone landscape */
+@media only screen and (min-width:321px) and (max-width:480px) {
+}
+
+/* Tablet portrait */
+@media only screen and (min-width:481px) and (max-width:768px) {
+}
+
+/* Tablet landscape */
+@media only screen and (min-width:769px) and (max-width:1024px) {
+}
+
+/* Standard layout */
+@media only screen and (min-width:1025px) {
+}

@@ -1,0 +1,15 @@
+/* Image Alignment */
+.field-type-image img {display:block;}
+.ia-n .field-type-image,.iat-n .node-teaser .field-type-image {float:none}
+.ia-l .field-type-image,.iat-l .node-teaser .field-type-image {float:left;}
+.ia-c .field-type-image,.iat-c .node-teaser .field-type-image {text-align:center;margin-left:auto;margin-right:auto}
+.ia-c .field-type-image img,.iat-c .node-teaser .field-type-image{text-align:center;margin-left:auto;margin-right:auto}
+.ia-r .field-type-image,.iat-r .node-teaser .field-type-image {float:right;}
+.field-type-image .field-label {margin-bottom:5px}
+/* Short codes */
+body .image-left,body div.image-left,body div.image-left .field-type-image {float:left;text-align:left}
+body .image-left img,body div.image-left img,body div.image-left .field-type-image img {text-align:left;}
+body .image-right,body div.image-right,body div.image-right .field-type-image {float:right;text-align:right}
+body .image-right img,body div.image-right img,body div.image-right .field-type-image img {text-align:right;}
+body .image-center,body .image-center img,body div.image-center,body div.image-center .field-type-image,
+body .image-center,body div.image-center,body div.image-center .field-type-image img{text-align:center;margin-left:auto;margin-right:auto}

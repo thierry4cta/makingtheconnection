@@ -1,0 +1,44 @@
+/* Login block - horizontal (theme setting) basic styles */
+.lb-h {
+  min-width: 320px;
+  margin-top: 1px;
+}
+.region-header .lb-h {
+  float: right;
+}
+.lb-h .block-inner,
+.lb-h .block-content {
+  background: none;
+  padding: 0;
+}
+.lb-h #user-login-form {
+  margin: 0;
+}
+.lb-h #user-login-form label {
+  line-height: 1.2
+}
+.lb-h .form-item {
+  float:left;
+  margin: 0;
+}
+.lb-h input.form-text {
+  margin:0 3px 0 0;
+  width:110px;
+}
+.lb-h #edit-actions {
+  margin: 0;
+}
+.lb-h input.form-submit {
+  position: absolute;
+  margin: 0;
+  top: 1.2em;
+}
+.lb-h .form-required,
+.lb-h .item-list {
+  display: none;
+}
+.lb-h h2 {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

@@ -1,0 +1,480 @@
+/**
+ * global.base.css
+ * This is basically a big reset for html elements to set up global defaults.
+ */
+
+/*
+ * Fonts
+ *
+ * By default there is no global font size reset. A common
+ * method is to reset it to 62.5%, or 10px. This makes it very
+ * easy to calculate the required font sizes in em, for example:
+ *
+ * 1.6em = 16px
+ * 2.4em = 24px
+ *
+ * In Adaptivetheme this should be applied to the HTML element,
+ * so it will play nicely with the theme settings. If you use
+ * the body element or #page wrapper you will get unpredictable
+ * font scaling issues.
+ *
+ * Font size chart from http://pxtoem.com/
+ *
+ * 6px	 0.6em	 60%	 5pt
+ * 7px	 0.7em	 70%	 5pt
+ * 8px	 0.8em	 80%	 6pt
+ * 9px	 0.9em	 90%	 7pt
+ * 10px	 1em	   100%	 8pt
+ * 11px	 1.1em	 110%	 8pt
+ * 12px	 1.2em	 120%	 9pt
+ * 13px	 1.3em	 130%	 10pt
+ * 14px	 1.4em	 140%	 11pt
+ * 15px	 1.5em	 150%	 11pt
+ * 16px	 1.6em	 160%	 12pt
+ * 17px	 1.7em	 170%	 13pt
+ * 18px	 1.8em	 180%	 14pt
+ * 19px	 1.9em	 190%	 14pt
+ * 20px	 2em	   200%	 15pt
+ * 21px	 2.1em	 210%	 16pt
+ * 22px	 2.2em	 220%	 17pt
+ * 23px	 2.3em	 230%	 17pt
+ * 24px	 2.4em	 240%	 18pt
+ *
+ *
+ * Font Theme Settings
+ *
+ * Adaptivetheme includes powerful theme settings for adding
+ * webfonts and setting font sizes - you can enable these
+ * under "Site Tweaks", simply enable the Fonts setting and
+ * start using them. You can choose from standard websafe font
+ * stacks, Google fonts, add your own custom stacks, and if you
+ * have @font-your-face module installed just set the font to
+ * "-- add selector in theme CSS --" and the font will automatically
+ * be available to you in theme settings.
+ * @see http://drupal.org/project/fontyourface
+ *
+ *
+ * Font Stacks
+ *
+ * These are the font stacks that used for the websafe fonts
+ * in theme settings (if you enabled the Fonts feature). They are
+ * included here for easy reference if you prefer to set your fonts
+ * in CSS.
+ *
+ * font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+ * font-family: Verdana, Geneva, 'DejaVu Sans', Arial, Helvetica, sans-serif;
+ * font-family: Arial, Helvetica, sans-serif;
+ * font-family: Calibri, Candara, Arial, Helvetica, sans-serif;
+ * font-family: 'Segoe UI', 'Myriad Pro', Myriad, Arial, Helvetica, sans-serif;
+ * font-family: 'Lucida Sans Unicode', 'Lucida Sans', 'Lucida Grande', Verdana, Geneva, sans-serif;
+ * font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+ * font-family: Garamond, Perpetua, 'Times New Roman', serif;
+ * font-family: Georgia, Baskerville, Palatino, 'Palatino Linotype', 'Book Antiqua', 'Times New Roman', serif;
+ * font-family: Consolas, Monaco, 'Courier New', Courier, monospace, sans-serif;
+ */
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=4d38d696-ed33-48bd-9dee-e786e9018f5b");
+@font-face{
+font-family:"FrutigerLTW01-47LightCn";
+src:url("../Fonts/e5b1a25e-0d2b-4aec-8672-da21553f205d.eot?iefix") format("eot");}
+@font-face{
+font-family:"FrutigerLTW01-47LightCn";
+src:url("../Fonts/e5b1a25e-0d2b-4aec-8672-da21553f205d.eot?iefix");
+src:url("../Fonts/e59898b4-93a8-4df7-885a-7806f9f0604d.woff") format("woff"),url("../Fonts/85928e7e-2ace-4f1d-be54-b11c333a8d97.ttf") format("truetype"),url("../Fonts/89390d0d-7a62-493d-9e77-9c162a709520.svg#89390d0d-7a62-493d-9e77-9c162a709520") format("svg");
+}
+@font-face{
+font-family:"FrutigerLTW01-57Condens";
+src:url("../Fonts/8ffa1144-4066-4dd8-950c-da8d355d4ab2.eot?iefix") format("eot");}
+@font-face{
+font-family:"FrutigerLTW01-57Condens";
+src:url("../Fonts/8ffa1144-4066-4dd8-950c-da8d355d4ab2.eot?iefix");
+src:url("../Fonts/37f83f2e-feaa-4d2c-9993-2771ab1f3e87.woff") format("woff"),url("../Fonts/b319582c-cdad-4301-9f65-3907fb8b508d.ttf") format("truetype"),url("../Fonts/427db4f2-4863-482e-bdaf-da48a03e52c9.svg#427db4f2-4863-482e-bdaf-da48a03e52c9") format("svg");
+}
+@font-face{
+font-family:"FrutigerLTW01-67BoldCn";
+src:url("../Fonts/a3a15351-8e3c-4c29-82e6-15b106c2181f.eot?iefix") format("eot");}
+@font-face{
+font-family:"FrutigerLTW01-67BoldCn";
+src:url("../Fonts/a3a15351-8e3c-4c29-82e6-15b106c2181f.eot?iefix");
+src:url("../Fonts/f1f95a55-f0c6-4fb5-8939-b93160b7a751.woff") format("woff"),url("../Fonts/032fd83c-fe79-47fa-9dda-0a3f03bd0506.ttf") format("truetype"),url("../Fonts/17f04727-b70e-460f-8b5c-c8cd21771240.svg#17f04727-b70e-460f-8b5c-c8cd21771240") format("svg");
+}
+
+html /* Always apply your global font size the the HTML element, not body or #page */ {
+  line-height: 1.5; /* Unitless line-heights scale */
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+ background: #FFFFFF;}
+h1,h2,h3,h4,h5,h6 {
+	font-family: FrutigerLTW01-57Condens;
+	color: #B74729; 
+	}
+p, ul, li, div, label, legend, td, a {
+	  font-family: Arial, sans-serif; 
+	  color: #666666;
+	  }
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img,
+em,dfn,del,ins,
+a,
+tbody,tfoot,thead,tr,
+ul,li,legend,
+figure,figcaption {
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Reset HTML5 elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Default font sizes for headings, can be overridden in theme settings or set them here */
+h1, h1#page-title {
+	font-size: 1.6em;
+	}
+
+h2 {	
+	font-size: 1.5em;
+
+}
+
+h3 {
+		font-size: 1.4em;
+}
+
+h4 {
+}
+
+h5,
+h6 {
+}
+#content  {
+			font-size: 1em;
+	}
+#content h3 { margin-bottom: 5px; }	
+img,
+a img {
+  border: 0;
+}
+p {
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+em,
+dfn {
+  font-style: italic;
+}
+
+ins {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-size: 1em;
+  font-family: Consolas, "Lucida Console", Menlo, Monaco, "DejaVu Sans Mono", monospace, sans-serif; /* sans-serif Safari hack */
+}
+
+blockquote,
+q {
+  font-style: italic;
+  quotes: "" "";
+}
+
+blockquote {
+  margin: 0 0 1.5em;
+  padding: 0 0 0 40px;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote p {
+  margin: 0;
+}
+
+strong,
+dfn,
+caption,
+th {
+  font-weight: 700;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 40px;
+  padding: 0;
+}
+
+.item-list ul,
+.item-list ol {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+.item-list ul li {
+  margin: 0;
+  padding: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul,
+.block ul ul,
+.block ul ol,
+.block ol ol,
+.block ol ul,
+.item-list ul ul,
+.item-list ul ol,
+.item-list ol ol,
+.item-list ol ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ul ul ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ol {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+ul ul,
+ul ul ul ul {
+  list-style-type: circle;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 0 1.5em 40px;
+}
+
+
+/**
+ * Flexible Media and Cross browser improvements
+ * - This can cause issues in table cells where no width is set on the column,
+ *   only in some versions of webkit and IE 7/8.
+ * - declaring the width attribute on image elements and using max-width causes
+ *   the "dissappering images" bug in IE8.
+ * - Google maps break also, see below for fixes.
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+/* Disable flexiblity for IE8 and below */
+.lt-ie9 img,
+.lt-ie9 object,
+.lt-ie9 embed,
+.lt-ie9 video {
+  max-width: none;
+}
+
+/* Override max-width 100% for map displays, as much as possible anyway... */
+#map img,
+.gmap img,
+.view-gmap img,
+.openlayers-map img,
+#getlocations_map_canvas img,
+#locationmap_map img,
+.geofieldMap img {
+  max-width: none !important;
+}
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* Prevents modern browsers from displaying 'audio' without controls */
+audio:not([controls]) {
+  display: none;
+}
+
+/* Prevent overflowing content */
+header[role=banner],
+.content-inner,
+.nav,
+.region-sidebar-first,
+.region-sidebar-second,
+.region-secondary-content,
+.region-tertiary-content,
+.region-footer {
+  overflow: visible;
+  word-wrap: break-word;
+}
+
+/* Helpful classes for hiding content */
+.element-invisible {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static !important;
+  width: auto;
+}
+
+.offscreen {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0;
+}
+
+.element-hidden {
+  display: none;
+}
+#logo { padding: 0 2px 0 0; width: 870px; background-color: white;}
+#page  { background: #FFFFFF url("../images/background.png")  left top repeat-y;   height: 100%; text-align: center; width: 990px;}
+#branding {background: #FFFFFF; width: 870px; }
+#branding, .region-leaderboard, #header, #columns, .region-tertiary-conten,  .region-tertiary-content  { width: 871px; margin-left: auto; margin-right: auto;  }
+#footer { width: 950px; margin-left: auto; margin-right: auto;  }
+#columns { border: 1px solid white;  background-color: white; text-align: left; padding-bottom: 0; width: 880px; margin-bottom: 0px;}
+#outdentWrapper { width: 62px; right: 15px; text-align: right;  top: 50%; position: fixed;}
+#outdentWrapper p {margin-bottom: 0;}
+#outdent { width: 80px; text-align: right;} 
+#content-column .block-inner, #header #branding { margin-right: 0; margin-left: 0;}
+.webform-confirmation { text-align: left;  border: 1px solid #CCC;}
+#main-content { border-right: 1px solid #c8c9cb; padding-right: 12px;}
+#main-content .article { margin-bottom: 0;}
+a:link {color: navy; text-decoration: none; }
+a:hover {color: blue; text-decoration: underline; }
+#concept-note-box ul {margin-top: 14px; }
+#contact-details { float:left; width:290px; background-color: white; }
+.translation-link { display: none; }
+.LangSwitch { font-size: 0.72em; color: white; padding: 4px; background-color: #CDCEC9; width: 130px; float: right; margin: 6px; text-align: center; border-radius: 5px; }
+/* hide page title for node 3 */
+.page-node-3 #page-title { display: none; }
+#footer { background: #D1D3D4; /* #F3F3F3  url("../images/footer.png") repeat-x;  */    text-align: left; padding-left: 20px  bottom:0px; height: 55px;}
+#footer-div { margin: auto; text-align: left; background: #D1D3D4;}
+#footer p { margin-bottom: 0; padding-bottom: 0;}
+div.region.region-sidebar-second.sidebar { width: 314px;}
+#block-locale-language { margin-bottom: 0; }
+#block-locale-language ul.language-switcher-locale-url { list-style: none;  display: block; margin-left: 695px; width: 200px; background-color: white;  }
+ul.language-switcher-locale-url li { float: left; display: block; padding: 0 15px; margin-right: 1px;}
+ul.language-switcher-locale-url li:first-child { border-right: 1px solid #CCCCCC;}
+ul.language-switcher-locale-url li a { color: #666666; }
+ul.language-switcher-locale-url li a:hover { color: #9A923D; }
+#crumbs { display: none; }
+#concept-note {   box-shadow: 2px 2px 5px #4D4D4D;   margin-right: 10px; margin-left: 10px; }
+#concept-note-box { float: right; width: 270px; background-color: #E2E4EA; border: 1px solid #ccc; border-radius: 5px; padding: 50px 10px 20px 10px;    }
+#conference-name a, #conference-slogan {  text-transform:lowercase; }
+#conference-name, #conference-name a, #conference-slogan, #conference-date, #conference-location { font-family: FrutigerLTW01-57Condens Arial, sans-serif; text-align: right; margin: 0 0 0 0;}
+#conference-name a {  font-size: 1.1em; color: #b84526; }
+#conference-slogan { font-size: 0.7em; color:#979240; font-weight: bold;}
+#conference-date {  font-size: 1em; color: #6c6d6f; margin-top: 15px; }
+#conference-location {  font-size: 1em; color: #6c6d6f; margin-bottom: 15px; }
+/* Mainly Second sidebar (right) */
+.region-sidebar-second form .form-submit { background: #FFFFFF url("../images/button-red-med.jpg") no-repeat center center;   width: 135px; height: 35px; color: white; /* font-family: Magra, Arial, sans-serif;*/ text-transform: uppercase; font-weight: bold; border: 0; font-size: 1.1em;  font-family: FrutigerLTW01-57Condens}
+#webform-client-form-1  #edit-submitted-your-name,  #webform-client-form-1  #edit-submitted-email-address, #edit-search-block-form--2 { background: #FFFFFF url("../images/form-bkg.jpg") no-repeat center center;  width: 260px; height: 35px; border: 0;padding-left: 15px;  ;}
+/* #webform-client-form-1 input { float: left; } */
+#webform-component-your-name { margin-bottom: 2px; }
+#webform-component-email-address { margin-top: 2px;}
+.compact-form-label { color: #BBBBBB; /* font-family: Magra, Arial sans-serif; */ text-transform: lowercase; font-style: italic; margin-top: 4px; margin-left: 10px; font-size: 1em;}
+.region-sidebar-second h2 a, .region-sidebar-second h2.block-title { color: #b94725; font-size: 1.1em;   font-family: FrutigerLTW01-57Condens, Arial, sans-serif;}
+.region-sidebar-second h2.block-title { font-size: 1.143em;  }
+#register-link  { background: #FFFFFF url("../images/button-red-lrg.jpg") no-repeat center 0px;   width: 135px; height: 35px; color: white; text-transform: uppercase; font-weight: bold; border: 0;  width: 282px; text-align: center; height: 54px;  padding-top: 6px; }
+#register-link a  { color: white; font-size: 1.1em;  font-family: FrutigerLTW01-57Condens; /* font-family: Magra, Arial, sans-serif;*/ font-weight: normal;}
+.region-sidebar-second h2 a:hover { color: #99913C; text-decoration: none;}
+#register-link a:hover { color: #DCDDDE;}
+div.hr-small { background: #FFFFFF url("../images/horizontal-sml.png") no-repeat scroll center; height: 1px;  padding:11px; }
+div.hr-small hr {display: none}
+.region-tertiary-content { padding-top: 10px; border-top: 1px solid #b7b7b9; margin-bottom: 10px; padding-bottom: 0; font-size: 0.72em;  }
+.region-tertiary-content div, .region-tertiary-content div p { margin-bottom: 0; }
+table#CountdownTimer { border:0 !important; background-color: #FFFFFF; }
+tr#TimerNos { font-size: 1.35em; text-align: center;}
+tr#TimerNos td, tr#TimerLtrs td { width: 40px; background-color: #FFFFFF;text-align: center;/*  font-family: Arial, San-serif; */ padding-top:0; padding-bottom:0;}
+tr#TimerLtrs { font-size: 0.72em; text-align: center; }
+#footer .block { margin-bottom: 0;}
+#JoinedFigures { float: left; width: 450px; height: 120px; margin-bottom: 37px;   }
+#MakingTheConnection { float: right; width: 371px;  height: 137px; margin-left: 20px; margin-bottom: 20px;   }
+#JoinedFigures img { width: 450px; height: 120px; }
+#MakingTheConnection img {width: 371px; height: 137px; } 
+
+/* Resources pages */
+#ResourcesCallout { height: 250px; width: 525px; margin-bottom: 30px; margin-top: 30px; background: #FFFFFF url("/sites/default/files/images/Resources-line.png") no-repeat bottom center;  }
+#ResourcesImg { float: left; width: 140px; margin-bottom: 0; }
+#ResourcesText { float: left; width: 350px; margin-left: 10px; margin-bottom: 0; }
+#ResourcesText h3 { color: #666666; margin-top: 0; padding-top: 0; }
+#ResourcesIcons { clear: both; margin-top: 0; float: left; width: 350px; margin-left: 150px; margin-bottom: 30px; }
+
+

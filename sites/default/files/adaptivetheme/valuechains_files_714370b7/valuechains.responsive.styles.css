@@ -1,0 +1,118 @@
+@media only screen and (max-width:320px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+html /* Example style to show how to target a device range */ {
+ font-size: 112.5%; /* Increase the default font size on small devices */
+ background: red;
+}
+
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+html /* Example style to show how to target a device range */ {
+ font-size: 112.5%; /* Increase the body font size on small devices */
+}
+
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+ /* Overall layout and Outdent */
+#columns { border: 1px solid white;  background-color: white; text-align: left; padding-bottom: 0; width: 880px; }
+#concept-note {   box-shadow: 2px 2px 5px #4D4D4D;   margin-right: 10px; margin-left: 10px; }
+#concept-note-box { float: right; width: 270px; background-color: #E2E4EA; border: 1px solid #ccc; border-radius: 5px; padding: 50px 10px 20px 10px;    }
+.red-head {clear: both; border-top: 1px solid #b64928; padding: 5px auto; color: #a34023;}
+.red-head2 {clear: both; margin-top: 15px; padding: 5px auto; color: #a34023; font-size: 1.5em;}
+.LangSwitch { font-size: 0.8em; font-color: white; padding: 4px; background-color: #CDCEC9;border-radius: 5px; width: 130px; float: right; margin: 6px; text-align: center; }
+/* hide page title for node 3 */
+#footer { background: #F3F3F3 url("../images/footer.png") repeat-x; width: 100%; padding: 15px; text-align: center; bottom:0px; height: 120px;}
+#footer-div { width: 1024px; margin: auto; text-align: left; }
+
+
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+html /* Example style to show how to target a device range */ {
+  font-size: 81.3%; /* Increase the body font size on small devices */
+}
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+ ul.language-switcher-locale-url { list-style: none; float: right; margin-right: 100px; width: 200px;  border: 1px solid grey;}
+ul.language-switcher-locale-url li { float: left; display: block; padding: 0 20px; margin-right: 1px;}
+h1, h2, h3, h4 { color: #a49f4d;  }
+}
+@media only screen and (min-width:1025px) {
+/**
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *   
+ * - There is an scss (SASS) version of this file in the /sass/ directory in your
+ *   sub-theme, if you set Compass to watch it or the directory this file will be
+ *   overwritten!
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+ /* Overall layout and Outdent */
+
+}

@@ -1,0 +1,14 @@
+; $Id: $
+name = Webform AJAX
+description = Adds AJAX support to Webforms
+core = 7.x
+package = Webform
+dependencies[] = webform
+dependencies[] = ctools
+
+; Information added by drupal.org packaging script on 2012-03-27
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "webform_ajax"
+datestamp = "1332852641"
+

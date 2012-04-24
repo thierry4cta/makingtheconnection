@@ -1,0 +1,56 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+ 
+/* Views */
+.view {
+}
+
+.view-content {
+}
+
+.views-row {
+}
+
+.views-row-odd {
+}
+
+.views-row-even {
+}
+
+.views-row-first {
+}
+
+.views-row-last {
+}
+
+.views-field {
+}
+
+.views-field-title {
+}
+
+.views-field .field-content {
+}
+
+.page-views /* Body class when viewing a Views page */ {
+}
+
+.block-views /* Block class */ {
+}
+
+
+/* Views Slideshow */
+.view-content .skin-default {
+}
+
+.view-content .skin-default img {
+}
+
+.views-slideshow-controls-top {
+}
+
+.views-slideshow-controls-bottom {
+}
